@@ -1,0 +1,65 @@
+<!DOCTYPE html></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Library</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="object-js.js" defer></script>
+  </head>
+  <body>
+    <h1>My Library</h1>
+    <div class="body-content">
+      <div class="top-content">
+        <button id="add-book">Add More Books</button>
+        <span id="notification"></span>
+      </div>
+
+      <dialog id="add-dialog">
+        <form action="submit" method="dialog">
+          <div>
+            <label for="title">Book Title</label>
+            <input type="text" id="title"  required/>
+          </div>
+          <div>
+            <label for="author">Book Author</label>
+            <input type="text" id="author"  required/>
+          </div>
+          <div>
+            <label for="genres">Book Genres</label>
+            <input type="text" id="genres"  required/>
+          </div>
+          <div>
+            <div>
+              <label for="pages">Pages</label>
+              <input type="number" id="pages" required min="1" />
+            </div>
+            <div>
+              <label for="status">Read Status</label>
+              <select name="status" id="read-status">
+                <option value="true" selected>Read</option>
+                <option value="false">Not Read</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <button value="cancel" formmethod="dialog">Cancel</button>
+            <button id="add-button" value="default">Add</button>
+          </div>
+        </form>
+      </dialog>
+      <div class="book-lists">
+        <!-- <div class="card-book">
+              <h3 class="book-title"></h2>
+              <h4 class="book-author" ></h3>
+              <p class="book-genres"></p>
+              <div class="bottom-card">
+                  <p class="book-page"></p>
+                  <p class="book-status"></p>
+              </div>
+          </div> -->
+      </article>
+    </div>
+  </body>
+</html>

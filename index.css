@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.body-content {
+  margin: 0 1em;
+}
+
+#add-book {
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+.book-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  gap: 1rem;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+.card-book {
+  background-color: antiquewhite;
+  padding: 1em;
+  border-radius: 0.5rem;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-genres {
+  font-style: italic;
+}
+
+.bottom-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+dialog {
+  margin: auto;
+  min-width: 75%;
+  border: none;
+  border-radius: 1rem;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+form {
+  padding: 2em 1.5em;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+form > div:nth-of-type(n + 2) {
+  margin-top: 1em;
+}
+
+form > div:nth-last-of-type(2) {
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 1em;
+}
+
+form > div:last-of-type {
+  flex-direction: row;
+  margin-top: 1em;
+  column-gap: 0.5em;
+  min-height: 5vh;
+}
+
+form > div:nth-last-of-type(2) > div {
+  flex-grow: 2;
+}
+
+#pages,
+#read-status {
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+#read-status {
+  padding: 0.5em 1em;
+  background-color: white;
+  border: 1px solid gray;
+  height: 40px;
+  border-radius: 0.25rem;
+}
+
+input {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+}
+
+form button {
+  flex-grow: 2;
+}
+
+.book-title {
+  flex-grow: 2;
+  border-bottom: 1px solid gray;
+  margin-bottom: 0.5em;
+}
+
+.top-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1em;
+  margin: 1em 0;
+}
+
+#notification {
+  flex-grow: 2;
+  text-align: center;
+  background-color: transparent;
+  padding: 0.5em;
+  border-radius: 0.5rem;
+}
+
+.delete-button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  max-width: 30%;
+  border: none;
+  background-color: maroon;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.book-status {
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+button[value*="true"] {
+  background-color: orange;
+}
+
+button[value*="false"] {
+  background-color: gray;
+  color: white;
+}
